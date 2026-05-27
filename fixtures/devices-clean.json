@@ -1,0 +1,30 @@
+{
+  "value": [
+    {
+      "id": "dev-c1",
+      "deviceName": "exec-macbook",
+      "userPrincipalName": "alice@example.com",
+      "operatingSystem": "macOS",
+      "osVersion": "15.4",
+      "complianceState": "compliant",
+      "jailBroken": "False",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-11-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-27T05:00:00Z",
+      "ownerType": "company"
+    },
+    {
+      "id": "dev-c2",
+      "deviceName": "seller-iphone",
+      "userPrincipalName": "bob@example.com",
+      "operatingSystem": "iOS",
+      "osVersion": "18.1",
+      "complianceState": "compliant",
+      "jailBroken": "False",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-10-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-27T05:00:00Z",
+      "ownerType": "company"
+    }
+  ]
+}
