@@ -165,6 +165,8 @@ function layout(title: string, active: string, body: string) {
         display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
         font-family:var(--mono); font-size:11px; color:var(--muted2); letter-spacing:.08em;
       }
+      .footer a{color:var(--bert2); text-decoration:none}
+      .footer a:hover{text-decoration:underline}
       a{color:inherit}
       code{font-family:var(--mono); font-size:12px; color:var(--bert2); background:rgba(25,199,255,.08); padding:1px 6px; border-radius:5px; border:1px solid rgba(25,199,255,.18);}
     </style>
@@ -210,7 +212,13 @@ function layout(title: string, active: string, body: string) {
       ${body}
       <div class="footer">
         <div>apple-device-trust-console · synthetic sample data only</div>
-        <div>routes: / · /trust-lane · /fleet-risks · /remediation-posture · /verification · /docs</div>
+        <div>
+          <a href="https://github.com/mizcausevic-dev/apple-device-trust-console">GitHub</a> ·
+          <a href="https://portfolio.kineticgain.com/">Portfolio</a> ·
+          <a href="https://suite.kineticgain.com/">Suite</a> ·
+          <a href="https://www.linkedin.com/in/mizcausevic/">LinkedIn</a> ·
+          <a href="https://kineticgain.com/">Kinetic Gain</a>
+        </div>
       </div>
     </div>
   </body>
@@ -252,6 +260,22 @@ export function renderOverview() {
           <div class="src"><div class="src-name">endpoint governance</div><div class="src-tit">Clear the fleet blockers first</div><p>${metrics.recommendation}</p></div>
           <div class="src"><div class="src-name">device evidence</div><div class="src-tit">Turn exports into operator proof</div><p>Every trust lane stays tied to owner, business role, compliance state, and the next concrete remediation move.</p></div>
           <div class="src"><div class="src-name">recruiter signal</div><div class="src-tit">Show Apple admin depth</div><p>This is real Apple endpoint-operations proof, not a generic device keyword page.</p></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="sh"><h2>Product depth</h2><div class="note">buyer value · technical proof · GTM story</div></div>
+        <div class="stack">
+          <div class="src"><div class="src-name">Buyer value</div><div class="src-tit">Reduce endpoint audit scramble</div><p>Security and IT leaders can see which Apple cohorts are safe, which are drifting, and who owns the next remediation before access windows or executive-device reviews break.</p></div>
+          <div class="src"><div class="src-name">Technical proof</div><div class="src-tit">Normalize MDM exports into decisions</div><p>The analyzer converts synthetic MDM-style records into trust lanes, fleet-risk findings, remediation posture, verification packets, CLI output, and prerendered review routes.</p></div>
+          <div class="src"><div class="src-name">GTM story</div><div class="src-tit">Make Apple endpoint posture board-readable</div><p>The surface positions Apple fleet trust as a concrete platform and security control plane that complements Entra, Defender, Okta, Jamf-style administration, and broader identity governance.</p></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="sh"><h2>What these repos have in common</h2><div class="note">risk signal · owner context · evidence packet · next action</div></div>
+        <div class="stack">
+          <div class="src"><div class="src-name">Risk signal</div><div class="src-tit">Make drift explicit</div><p>Stale check-ins, encryption gaps, personal-device scope, noncompliance, and orphaned ownership are modeled as named operating risks instead of hidden admin-console noise.</p></div>
+          <div class="src"><div class="src-name">Owner context</div><div class="src-tit">Tie each issue to a real lane</div><p>Every finding carries the accountable owner, business role, compliance state, and reason it matters for platform, security, compliance, or buyer-facing leadership.</p></div>
+          <div class="src"><div class="src-name">Evidence packet</div><div class="src-tit">Keep proof reusable</div><p>Summary APIs, sample JSON, screenshots, docs, and CLI output make the page useful for audits, diligence, GTM demos, and internal operating reviews.</p></div>
         </div>
       </section>`
   );

@@ -25,6 +25,30 @@ This repo demonstrates the Apple endpoint-trust control-plane primitive for ente
 - offline-safe analysis of captured MDM device exports normalized to one shape
 - recruiter-facing Apple endpoint operations proof that composes with Entra and Defender governance
 
+## Product depth
+
+Apple Device Trust Console is a board-readable endpoint governance surface for Apple fleets. It gives IT, security, compliance, and platform leaders a single view of stale check-ins, encryption drift, personal-device exposure, OS posture, and remediation sequencing before access windows or rollout plans break.
+
+- **Buyer value:** reduces audit scramble and executive-device surprise by showing which Apple cohorts are safe, which are drifting, and who owns the next fix.
+- **Technical proof:** normalizes synthetic MDM-style device exports into trust lanes, risk findings, remediation posture, verification packets, CLI output, and prerendered site routes.
+- **GTM story:** positions Apple endpoint posture as a concrete platform/security control plane that complements Entra, Defender, Okta, Jamf-style administration, and broader identity governance.
+
+## What these repos have in common
+
+Every Kinetic Gain operator surface follows the same pattern: convert fragmented admin exports into leadership-readable decisions without exposing live tenant credentials.
+
+- **Risk signal:** stale device check-ins, encryption gaps, personal-device scope, noncompliance, and orphaned ownership are modeled explicitly.
+- **Owner context:** every lane ties the finding to an accountable team or operating role.
+- **Evidence packet:** summary APIs, sample JSON, screenshots, docs, and CLI output make the proof reusable for audits, demos, and diligence.
+- **Next action:** each route names the corrective move so the page is operational, not just descriptive.
+
+## Operating workflow
+
+1. Load a normalized Apple device export or use the included synthetic fixture.
+2. Score trust posture across stale check-ins, compliance state, encryption, OS drift, personal-device scope, and ownership.
+3. Route the highest-risk devices into remediation packets with owner, rationale, and next action.
+4. Publish the static proof surface for review by IT, security, compliance, and buyer-facing teams.
+
 ## Routes
 
 - `/`
